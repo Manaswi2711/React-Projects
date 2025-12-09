@@ -1,9 +1,10 @@
 import React from "react";
-import "./Product.css"; // 🔥 IMPORT CUSTOM CSS
+import "./Product.css";
 
 function Product({ prod }) {
   return (
     <div className="prod-card">
+      <h1>producst</h1>
       <img src={prod.thumbnail} alt={prod.title} className="prod-img" />
 
       <div className="prod-body">
