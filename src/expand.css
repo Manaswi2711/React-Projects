@@ -1,0 +1,50 @@
+
+.faq-box {
+  background: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #fff;
+  text-align: center; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.faq-box:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+
+.faq-header {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+
+.icon {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+.faq-answer {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
