@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useGetPokemonByNameQuery } from "../../services/pokemonApi";
-import "./PokemonDetails.css"; // make sure this is imported
+import "./PokemonDetails.css";
 
 function PokemonDetails() {
   const { name } = useParams();
@@ -20,7 +20,7 @@ function PokemonDetails() {
       <h3>Abilities:</h3>
       <ul>
         {data.abilities.map((ab) => (
-          <li key={ab.ability.name}>{ab.ability.name}</li>
+          <li >{ab.ability.name}</li>
         ))}
       </ul>
     </div>
