@@ -23,7 +23,7 @@ function Products() {
       }}
     >
       {products.map((p) => (
-        <Product key={p.id} prod={p} />
+        <Product key={p.id} prod={p} ></Product>
       ))}
     </div>
   );

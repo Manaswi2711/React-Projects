@@ -7,7 +7,8 @@ import Products from "./components/Products";
 function App() {
   return (
     <div>
-      <Products></Products>
+      <h1 className="text-center text-info">PRODUCTS</h1>
+      <Products> </Products>
     </div>
   );
 }
