@@ -1,9 +1,5 @@
 import React from "react";
 import "./Home.css"; 
-import picachu from "./../assets/picachu.png";
-import charmindar from "./../assets/charmindar.png";
-import squirtle from "../assets/squirtle.png";
-
 
 function Home() {
   return (
