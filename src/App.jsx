@@ -1,14 +1,14 @@
 import React from "react";
-import Form from "./components/Form";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 
 function App() {
   return (
-    <>
-
-    <Form></Form> 
-    </>
+   
+      <Navbar></Navbar>
+      
+      
   );
 }
 
