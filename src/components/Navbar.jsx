@@ -1,19 +1,20 @@
 import React from "react";
-import { Link,Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   return (
-  <div>
-      <div style={{ padding: "10px", backgroundColor: "#f2f2f2"}}>
-      <Link to="/home" style={{ margin: "0 10px" }} >Home</Link>
-      <Link to="/Destination" style={{ margin: "0 10px" }}>Destinations</Link>
-      <Link to="/packages" style={{ margin: "0 10px" }}>Packages</Link>
-      <Link to="/about" style={{ margin: "0 10px" }}>About Us</Link>
-      <Link to="/contactus" style={{ margin: "0 10px" }}>Contact Us</Link>
+    <div>
+      <div className="navbar">
+        <Link to="/home" className="nav-link">Home</Link>
+        <Link to="/Destination" className="nav-link">Destinations</Link>
+        <Link to="/packages" className="nav-link">Packages</Link>
+        <Link to="/about" className="nav-link">About Us</Link>
+        <Link to="/contactus" className="nav-link">Contact Us</Link>
+      </div>
+
+      <Outlet></Outlet>
     </div>
-    <Outlet></Outlet>
-  </div>
-    
   );
 }
 
